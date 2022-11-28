@@ -17,7 +17,7 @@ const Form: React.FC<FormProps> = (props) => {
 
     return (
         <>
-            <p>Tell me a topic and i'll tell you a short story and give it you a title.</p>
+            <p>Tell me a topic and i will tell you a short story and give it you a title.</p>
 
             <input 
                 type="text" 
