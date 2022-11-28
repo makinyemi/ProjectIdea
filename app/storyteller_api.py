@@ -47,4 +47,4 @@ def validate_input_length(prompt: str):
     pass
 
 
-# uvicorn storyteller:app --reload
+# uvicorn storyteller_api:app --reload
