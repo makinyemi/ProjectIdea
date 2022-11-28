@@ -7,8 +7,7 @@ interface FormProps {
 }
 
 const Form: React.FC<FormProps> = (props) => {
-  const isPromptValid =
-    props.prompt.length < props.characterLimit && props.prompt.length > 0;
+  const isPromptValid = props.prompt.length < props.characterLimit;
   const updatePromptValue = (text: string) => {
     if (text.length <= props.characterLimit) {
       props.setPrompt(text);
