@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>CopyKitty | AI Generated Story Teller</title>
+        <title>Story Teller | AI Generated Story Teller</title>
         <meta name="description" content="Telling Stories since 1995." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
