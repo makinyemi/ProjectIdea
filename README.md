@@ -1,4 +1,4 @@
-# ProjectIdea
+# Project Idea Generator
 
 Backend
 
