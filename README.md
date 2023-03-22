@@ -43,3 +43,23 @@ NodeJS
 Docker
 
 Prepare infrastructure with dependencies for needed files packages needed to run out project
+
+Frontend
+
+Typescript (language)
+
+This is type safe javascript
+
+NodeJS is JS engine for running JS or TS code
+
+React is the frontend framework
+
+NextJS this renders React front end into a static hosted site
+
+yarn create next-app -typescript
+
+name project
+
+cd into project
+
+run yarn dev
