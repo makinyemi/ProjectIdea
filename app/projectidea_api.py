@@ -1,8 +1,7 @@
 from fastapi import FastAPI, HTTPException
-from storyteller import generate_related_title, generate_story
+from projectidea import generate_project_title, generate_project_description
 from mangum import Mangum
 from fastapi.middleware.cors import CORSMiddleware
-
 
 app = FastAPI()
 handler = Mangum(app)
@@ -14,31 +13,27 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)
+)  
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-@app.get("/generate_title")
+@app.get("/generate_project_title")
 async def generate_title_api(prompt: str):
     validate_input_length(prompt)
-    title = generate_related_title(prompt)
-    return {"story": None, "title": title}
+    title = generate_project_title(prompt)
+    return {"description": None, "title": title}
 
-@app.get("/tell_story")
-async def tell_story(prompt: str):
+@app.get("/generate_project_description")
+async def generate_project_api(prompt: str):
     validate_input_length(prompt)
-    story = generate_story(prompt)
-    return {"story": story, "title": []}
+    description = generate_project_description(prompt)
+    return {"description": description, "title": None}
 
-@app.get("/tell_a_story_with_a_title")
-async def tell_a_story(prompt: str):
+@app.get("/generate_a_project_title_and_description")
+async def generate_full_project_api(prompt: str):
     validate_input_length(prompt)
-    story = generate_story(prompt)
-    title = generate_related_title(prompt)
+    description = generate_project_description(prompt)
+    title = generate_project_title(prompt)
 
-    return {"story": story, "title": title}
+    return {"description": description, "title": title}
 
 
 def validate_input_length(prompt: str):
