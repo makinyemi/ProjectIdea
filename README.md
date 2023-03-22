@@ -27,7 +27,16 @@ Lambda (serverless compute service) pay as you use. Fast and scalable
 and API Gateway managed with AWS CDK. Efficient to maintain and serve thousands of request for free
 
 Lambda will contain the
+
 AWS CLI
+
+Creating infrastructure project with AWS CDK command
+
+cdk init
+
+cdk deploy
+
+yarn add dotenv
 
 NodeJS
 

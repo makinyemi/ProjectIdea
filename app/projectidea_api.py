@@ -40,6 +40,3 @@ def validate_input_length(prompt: str):
     if len(prompt) >= MAX_INPUT_LENGTH:
         raise HTTPException(status_code=400, detail=f"Input lenght is too long. Must be under {MAX_INPUT_LENGTH}")
     pass
-
-
-# uvicorn storyteller_api:app --reload

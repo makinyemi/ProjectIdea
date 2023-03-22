@@ -1,8 +1,8 @@
 {
-  "name": "storyteller-infra",
+  "name": "projectidea-infra",
   "version": "0.1.0",
   "bin": {
-    "storyteller-infra": "bin/storyteller-infra.js"
+    "projectidea-infra": "bin/projectidea-infra.js"
   },
   "scripts": {
     "build": "tsc",
