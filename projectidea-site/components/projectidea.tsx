@@ -65,11 +65,23 @@ const ProjectIdea: React.FC = () => {
     />
   );
 
+  const gradientTextStyle =
+    "text-white text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 font-light w-fit mx-auto";
   return (
-    <>
-      <h1>Project Idea Generator</h1>
-      {displayedElement}
-    </>
+    <div className="h-screen flex">
+      <div className="max-w-md m-auto p-3">
+        <div className="bg-slate-600 p-6 rounded-md text-white">
+          <div className="text-center my-6">
+            <h1 className={gradientTextStyle + " text-3xl font-light"}>
+              Project Idea Generator
+            </h1>
+            <div className={gradientTextStyle}>AI powered idea creator</div>
+          </div>
+
+          {displayedElement}
+        </div>
+      </div>
+    </div>
   );
 };
 
