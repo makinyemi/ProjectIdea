@@ -17,7 +17,7 @@ For Python 3.6+
 
 Wraps Python application into an API that can be accessed publicly over the internet http protocol
 
-Use to test API
+Use to test Fast API
 
 # uvicorn projectidea_api:app --reload
 
