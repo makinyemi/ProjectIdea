@@ -1,5 +1,25 @@
 # Project Idea Generator
 
+View at : https://project-idea.vercel.app/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTES:
 Backend
 
 Python
