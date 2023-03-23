@@ -35,6 +35,7 @@ const Form: React.FC<FormProps> = (props) => {
         type="text"
         value={props.prompt}
         placeholder="sandwiches"
+        disabled={props.isLoading}
         onChange={(e) => updatePromptValue(e.currentTarget.value)}
       />
       <div className={statusColor + " flex justify-between my-2 mb-6 text-sm"}>
